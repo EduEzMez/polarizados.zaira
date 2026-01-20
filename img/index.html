@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Polarizados Zaira | Polarizados en Lanús y a Domicilio</title>
+  <meta name="description" content="Polarizados Zaira ofrece polarizados en Lanús y alrededores. Servicio a domicilio para autos, casas, countries y oficinas." />
+  <meta name="keywords" content="polarizados lanus, polarizados zaira, polarizado de vidrios, polarizado automotor, polarizado para casas, polarizados a domicilio, polarizados country" />
+  <meta name="author" content="Polarizados Zaira" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Polarizados Zaira | Servicio Profesional a Domicilio" />
+  <meta property="og:description" content="Polarizados automotrices y arquitectónicos en Lanús. Atención a domicilio para casas, autos y countries." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tusitio.com" />
+  <meta property="og:image" content="img/logo.webp" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:site_name" content="Polarizados Zaira" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <style>
+    :root {
+      --rojo: #c4161c;
+      --negro: #111;
+      --gris: #f5f5f5;
+      --texto: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+    }
+
+    body {
+      color: var(--texto);
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 0;
+    }
+
+    .logo img {
+      height: 55px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      font-weight: 500;
+      color: var(--negro);
+    }
+
+    .btn-whatsapp {
+      background: var(--rojo);
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    /* HERO */
+    .hero {
+      background: var(--gris);
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.4rem;
+      margin-bottom: 15px;
+      color: var(--negro);
+      font-weight: 700;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      margin-bottom: 25px;
+      font-size: 1.1rem;
+    }
+
+    section {
+      padding: 70px 0;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: var(--negro);
+    }
+
+    /* SERVICES */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .service {
+      background: #fff;
+      border: 1px solid #eee;
+      padding: 25px;
+      text-align: center;
+      border-radius: 6px;
+    }
+
+    .service h3 {
+      margin-bottom: 10px;
+      color: var(--rojo);
+    }
+
+    /* BENEFITS */
+    .benefits {
+      background: var(--gris);
+    }
+
+    .benefits ul {
+      max-width: 700px;
+      margin: auto;
+      list-style: none;
+    }
+
+    .benefits li {
+      padding: 10px 0;
+      font-size: 1.1rem;
+    }
+
+    /* GALLERY */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+      background: #ddd;
+    }
+
+    /* CONTACT */
+    .contact {
+      text-align: center;
+      background: var(--gris);
+    }
+
+    .contact p {
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--negro);
+      color: #fff;
+      padding: 30px 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .social {
+      margin-top: 15px;
+    }
+
+    .social a {
+      display: inline-block;
+      margin: 0 8px;
+    }
+
+    .social img {
+      width: 26px;
+      height: 26px;
+      filter: invert(1);
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <img src="img/logo.webp" alt="Polarizados Zaira - Logo">
+      </div>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="btn-whatsapp" href="https://wa.me/5491161419123" target="_blank">WhatsApp</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <h1>Polarizados Zaira</h1>
+      <p>Servicio profesional de polarizados en Lanús y alrededores. Trabajamos a domicilio en autos, casas, countries y oficinas.</p>
+      <a class="btn-whatsapp" href="https://wa.me/5491161419123" target="_blank">Consultar por WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="servicios">
+    <div class="container">
+      <h2>Servicios</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Polarizado Automotor</h3>
+          <p>Protección solar, privacidad y estilo para tu vehículo.</p>
+        </div>
+        <div class="service">
+          <h3>Polarizado para Casas</h3>
+          <p>Control solar y protección UV para vidrios residenciales.</p>
+        </div>
+        <div class="service">
+          <h3>Polarizado Arquitectónico</h3>
+          <p>Ideal para oficinas, locales y countries.</p>
+        </div>
+        <div class="service">
+          <h3>Esmerilados y Ploteados</h3>
+          <p>Diseños personalizados y señalización.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="benefits">
+    <div class="container">
+      <h2>¿Por qué elegir Polarizados Zaira?</h2>
+      <ul>
+        <li>✔ Servicio a domicilio</li>
+        <li>✔ Materiales de alta calidad</li>
+        <li>✔ Experiencia y profesionalismo</li>
+        <li>✔ Atención personalizada</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="galeria">
+    <div class="container">
+      <h2>Trabajos Realizados</h2>
+      <div class="gallery">
+        <img src="img/img1.webp" alt="Polarizados Zaira trabajo 1">
+        <img src="img/img2.webp" alt="Polarizados Zaira trabajo 2">
+        <img src="img/img3.webp" alt="Polarizados Zaira trabajo 3">
+        <img src="img/img4.webp" alt="Polarizados Zaira trabajo 4">
+        <img src="img/img5.webp" alt="Polarizados Zaira trabajo 5">
+        <img src="img/img6.webp" alt="Polarizados Zaira trabajo 6">
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contacto">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p>Consultanos directamente por WhatsApp o seguinos en Instagram.</p>
+      <a class="btn-whatsapp" href="https://wa.me/5491161419123" target="_blank">+54 9 11 6141-9123</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Polarizados Zaira – Todos los derechos reservados</p>
+      <div class="social">
+        <a href="https://www.instagram.com/polarizados.zaira/" target="_blank" aria-label="Instagram Polarizados Zaira">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="Instagram">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
