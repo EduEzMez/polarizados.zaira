@@ -14,7 +14,7 @@
   <!-- Open Graph -->
   <meta property="og:title" content="Polarizados Tintearg | Servicio Profesional a Domicilio" />
   <meta property="og:description" content="Polarizados automotrices y arquitectónicos en Lanús. Atención a domicilio." />
-  <meta property="og:type" content="https://polarizadostintearg.netlify.app/" />
+  <meta property="og:type" content="website" />
   <meta property="og:image" content="img/logo.webp" />
   <meta property="og:locale" content="es_AR" />
 
@@ -81,20 +81,25 @@
 
     /* HERO */
     .hero {
-      background: var(--blanco);
-      padding: 90px 0;
+      background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("img/hero.webp") center / cover no-repeat;
+      padding: 120px 0;
       text-align: center;
     }
 
     .hero-logo {
-      width: 220px;
+      width: 240px;
       margin-bottom: 25px;
+      filter:
+        drop-shadow(0 0 6px rgba(255,255,255,0.6))
+        drop-shadow(0 0 14px rgba(255,255,255,0.35));
     }
 
     .hero h1 {
       font-size: 2.6rem;
       margin-bottom: 15px;
-      color: var(--oscuro);
+      color: #ffffff;
       font-weight: 700;
     }
 
@@ -103,6 +108,7 @@
       margin: auto;
       margin-bottom: 30px;
       font-size: 1.1rem;
+      color: #f1f1f1;
     }
 
     .btn-whatsapp {
@@ -246,7 +252,7 @@
       filter: invert(1);
     }
 
-    /* WHATSAPP FLOAT (DESKTOP + MOBILE) */
+    /* WHATSAPP FLOAT */
     .whatsapp-float {
       position: fixed;
       bottom: 20px;
@@ -263,127 +269,109 @@
       nav {
         display: none;
       }
+
+      .hero-logo {
+        width: 190px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="container header-content">
-      <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#galeria">Galería</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero" id="inicio">
-    <div class="container">
-      <img src="img/logo.webp" alt="Polarizados Tintearg Logo" class="hero-logo">
-      <h1>Polarizados Tintearg</h1>
-      <p>Servicio profesional de polarizados en Lanús y alrededores. Trabajamos a domicilio en autos, casas, countries y oficinas.</p>
-      <a class="btn-whatsapp" href="https://wa.me/5491161419123" target="_blank">Consultar por WhatsApp</a>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section id="servicios">
-    <div class="container">
-      <h2>Servicios</h2>
-      <div class="services">
-        <div class="service">
-          <h3>Polarizado Automotor</h3>
-          <p>Protección solar, privacidad y estilo para tu vehículo.</p>
-        </div>
-        <div class="service">
-          <h3>Polarizado para Casas</h3>
-          <p>Control solar y protección UV para vidrios residenciales.</p>
-        </div>
-        <div class="service">
-          <h3>Polarizado Arquitectónico</h3>
-          <p>Ideal para oficinas, locales y countries.</p>
-        </div>
-        <div class="service">
-          <h3>Esmerilados y Ploteados</h3>
-          <p>Diseños personalizados y señalización.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- BENEFITS -->
-  <section class="benefits">
-    <div class="container">
-      <h2>¿Por qué elegirnos?</h2>
-      <ul>
-        <li>✔ Servicio a domicilio</li>
-        <li>✔ Materiales de alta calidad</li>
-        <li>✔ Experiencia y profesionalismo</li>
-        <li>✔ Atención personalizada</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- GALLERY -->
-  <section id="galeria">
-    <div class="container">
-      <h2>Trabajos Realizados</h2>
-      <div class="gallery">
-        <img src="img/img1.webp" onclick="openLightbox(this.src)">
-        <img src="img/img2.webp" onclick="openLightbox(this.src)">
-        <img src="img/img3.webp" onclick="openLightbox(this.src)">
-        <img src="img/img4.webp" onclick="openLightbox(this.src)">
-        <img src="img/img5.webp" onclick="openLightbox(this.src)">
-        <img src="img/img6.webp" onclick="openLightbox(this.src)">
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="contact" id="contacto">
-    <div class="container">
-      <h2>Contacto</h2>
-      <p>Consultanos por WhatsApp o seguinos en Instagram.</p>
-      <a class="btn-whatsapp" href="https://wa.me/5491161419123" target="_blank">+54 9 11 6141-9123</a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <p>© 2026 Polarizados Tintearg – Todos los derechos reservados</p>
-      <div class="social">
-        <a href="https://www.instagram.com/polarizados.zaira/" target="_blank">
-          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="Instagram">
-        </a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- WHATSAPP FLOAT -->
-  <a class="whatsapp-float" href="https://wa.me/5491161419123" target="_blank">💬</a>
-
-  <!-- LIGHTBOX -->
-  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-    <span>&times;</span>
-    <img id="lightbox-img">
+<header>
+  <div class="container header-content">
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
   </div>
+</header>
 
-  <script>
-    function openLightbox(src) {
-      document.getElementById('lightbox-img').src = src;
-      document.getElementById('lightbox').style.display = 'flex';
-    }
+<section class="hero" id="inicio">
+  <div class="container">
+    <img src="img/logo.webp" alt="Polarizados Tintearg Logo" class="hero-logo">
+    <h1>Polarizados Tintearg</h1>
+    <p>Servicio profesional de polarizados en Lanús y alrededores. Trabajamos a domicilio en autos, casas, countries y oficinas.</p>
+    <a class="btn-whatsapp" href="https://wa.me/5491161419123" target="_blank">Consultar por WhatsApp</a>
+  </div>
+</section>
 
-    function closeLightbox() {
-      document.getElementById('lightbox').style.display = 'none';
-    }
-  </script>
+<section id="servicios">
+  <div class="container">
+    <h2>Servicios</h2>
+    <div class="services">
+      <div class="service"><h3>Polarizado Automotor</h3><p>Protección solar, privacidad y estilo.</p></div>
+      <div class="service"><h3>Polarizado para Casas</h3><p>Control solar y protección UV.</p></div>
+      <div class="service"><h3>Polarizado Arquitectónico</h3><p>Oficinas, locales y countries.</p></div>
+      <div class="service"><h3>Esmerilados y Ploteados</h3><p>Diseños personalizados.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="benefits">
+  <div class="container">
+    <h2>¿Por qué elegirnos?</h2>
+    <ul>
+      <li>✔ Servicio a domicilio</li>
+      <li>✔ Materiales premium</li>
+      <li>✔ Experiencia comprobada</li>
+      <li>✔ Atención personalizada</li>
+    </ul>
+  </div>
+</section>
+
+<section id="galeria">
+  <div class="container">
+    <h2>Trabajos Realizados</h2>
+    <div class="gallery">
+      <img src="img/img1.webp" onclick="openLightbox(this.src)">
+      <img src="img/img2.webp" onclick="openLightbox(this.src)">
+      <img src="img/img3.webp" onclick="openLightbox(this.src)">
+      <img src="img/img4.webp" onclick="openLightbox(this.src)">
+      <img src="img/img5.webp" onclick="openLightbox(this.src)">
+      <img src="img/img6.webp" onclick="openLightbox(this.src)">
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <div class="container">
+    <h2>Contacto</h2>
+    <p>Consultanos por WhatsApp o seguinos en Instagram.</p>
+    <a class="btn-whatsapp" href="https://wa.me/5491161419123" target="_blank">+54 9 11 6141-9123</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Polarizados Tintearg – Todos los derechos reservados</p>
+    <div class="social">
+      <a href="https://www.instagram.com/polarizados.zaira/" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="Instagram">
+      </a>
+    </div>
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/5491161419123" target="_blank">💬</a>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span>&times;</span>
+  <img id="lightbox-img">
+</div>
+
+<script>
+  function openLightbox(src) {
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox').style.display = 'flex';
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+  }
+</script>
 
 </body>
 </html>
